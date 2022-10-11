@@ -1,6 +1,7 @@
-import { IncomingMessage, ServerResponse } from "http"
-import { User } from "./types"
-import checkBasicAuth from "./checkBasicAuth"
+import { IncomingMessage, ServerResponse } from 'http';
+
+import checkBasicAuth from './checkBasicAuth';
+import { User } from './types';
 
 interface Options {
   users?: User[]
@@ -15,7 +16,7 @@ function init(options: Options = {}) {
   }
 
   return (req: IncomingMessage, res: ServerResponse) => {
-    checkBasicAuth(req, res, users)
+    return checkBasicAuth(req, res, users)
   }
 }
 
