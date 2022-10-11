@@ -1,5 +1,7 @@
 {
-  "version": "0.1.3",
+  "name": "nextjs-basic-auth2",
+  "author": "Suraj Mandal",
+  "version": "0.1.4",
   "description": "Simple Basic Auth implemention for Next.js applications.",
   "license": "MIT",
   "main": "dist/index.js",
@@ -8,14 +10,25 @@
     "dist",
     "src"
   ],
-  "repository": "jchiatt/nextjs-basic-auth",
-  "homepage": "https://github.com/jchiatt/nextjs-basic-auth",
-  "bugs": "https://github.com/jchiatt/nextjs-basic-auth/issues",
+  "repository": "surajamndalcell/nextjs-basic-auth2",
+  "homepage": "https://github.com/surajmandalcell/nextjs-basic-auth2",
+  "bugs": "https://github.com/surajmandalcell/nextjs-basic-auth2/issues",
   "keywords": [
     "next",
     "nextjs",
     "basic auth",
     "auth"
+  ],
+  "module": "dist/nextjs-basic-auth2.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/nextjs-basic-auth2.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/nextjs-basic-auth2.esm.js",
+      "limit": "10 KB"
+    }
   ],
   "engines": {
     "node": ">=10"
@@ -40,19 +53,6 @@
     "singleQuote": false,
     "trailingComma": "es5"
   },
-  "name": "nextjs-basic-auth",
-  "author": "J.C. Hiatt",
-  "module": "dist/nextjs-basic-auth.esm.js",
-  "size-limit": [
-    {
-      "path": "dist/nextjs-basic-auth.cjs.production.min.js",
-      "limit": "10 KB"
-    },
-    {
-      "path": "dist/nextjs-basic-auth.esm.js",
-      "limit": "10 KB"
-    }
-  ],
   "devDependencies": {
     "@size-limit/preset-small-lib": "^8.1.0",
     "@types/basic-auth": "^1.1.3",

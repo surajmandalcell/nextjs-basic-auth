@@ -1,7 +1,8 @@
-import { IncomingMessage, ServerResponse } from "http"
-import { User } from "./types"
-import authHeaderToBase64 from "./utils/authHeaderToBase64"
-import findAndCheckUser from "./utils/findAndCheckUser"
+import { IncomingMessage, ServerResponse } from 'http';
+
+import { User } from './types';
+import authHeaderToBase64 from './utils/authHeaderToBase64';
+import findAndCheckUser from './utils/findAndCheckUser';
 
 async function checkBasicAuth(
   req: IncomingMessage,
